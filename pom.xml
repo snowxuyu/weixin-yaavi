@@ -50,6 +50,35 @@
             <version>18.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.mobanker.common</groupId>
+            <artifactId>mobanker-core</artifactId>
+            <version>1.0.7-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mobanker.common</groupId>
+            <artifactId>mobanker-common-redis</artifactId>
+            <version>1.0.2-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mobanker.common</groupId>
+            <artifactId>mobanker-common-secret</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mobanker.common</groupId>
+            <artifactId>mobanker-common-utils</artifactId>
+            <version>1.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mobanker.common</groupId>
+            <artifactId>mobanker-common-activemq</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
 
     </dependencies>
 
