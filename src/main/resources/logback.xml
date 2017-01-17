@@ -131,7 +131,7 @@
         <appender-ref ref="STDOUT" />
     </logger>
 
-    <logger name="org.snowxuyu" level="DEBUG" additivity="true">
+    <logger name="com.weixin.yaavi" level="DEBUG" additivity="true">
         <appender-ref ref="file-info" />
     </logger>
 
