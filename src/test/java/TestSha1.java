@@ -1,3 +1,8 @@
+import javax.swing.text.DateFormatter;
+import java.text.SimpleDateFormat;
+import java.util.function.BinaryOperator;
+import java.util.function.Predicate;
+
 /**
  * Created with IntelliJ IDEA.
  * User: snowxuyu
@@ -6,7 +11,12 @@
  */
 public class TestSha1 {
     public static void main(String[] args){
-        String str1 = "jsapi_ticket=sM4AOVdWfPE4DxkXGEs8VOokFGkj6Y3Z8rzYLlLaVf6UcrnIiaewk7PidbOsNjgmMbKxU3rtm5tCgQ7U7RJYKQ&noncestr=65c74f3554a84ff999ef507f16a2c85f&timestamp=1480012381&url=https://yaavi.me/";
-        String str2 = "jsapi_ticket=sM4AOVdWfPE4DxkXGEs8VOokFGkj6Y3Z8rzYLlLaVf6UcrnIiaewk7PidbOsNjgmMbKxU3rtm5tCgQ7U7RJYKQ&noncestr=65c74f3554a84ff999ef507f16a2c85f&timestamp=1480012381000&url=https://yaavi.me/";
+        Predicate<Integer> i = x -> x>1;
+        System.out.println(i.test(3));
+
+        BinaryOperator<Long> add = (x, y) -> x*y;
+        System.out.println(add.apply(1L,2L));
+
+        ThreadLocal.withInitial(()->new DateFormatter(new SimpleDateFormat("dd-MM-yyyy")));
     }
 }
